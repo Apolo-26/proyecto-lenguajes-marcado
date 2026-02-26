@@ -30,9 +30,9 @@ section { padding: 80px 10%; }
 
 /* HEADER */
 header {
-    height: 100vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-    url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988534/header.jpg") fixed center/cover;
-    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    /* Fondo de respaldo: Una mesa de restaurante elegante */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url("https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80") fixed center/cover;
 }
 header nav { position: absolute; top: 0; width: 100%; padding: 20px 50px; justify-content: space-between; z-index: 100; transition: .5s; }
 header nav.active { background: #fff; position: fixed; padding: 10px 50px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
@@ -43,9 +43,8 @@ header nav .navigation-bar a { color: #fff; margin-left: 20px; font-weight: bold
 /* SECCIONES */
 .image-container img { width: 250px; height: 350px; object-fit: cover; margin: 10px; border-radius: 5px; }
 
-.recipes, .fixed-image {
-    height: 400px; background-attachment: fixed; background-size: cover; background-position: center;
-    display: flex; flex-direction: column; justify-content: center;
+.recipes {
+    background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1350&q=80");
 }
 .recipes h2, .fixed-image h2 { color: #fff; }
 .recipes h3, .fixed-image h3 { color: #fff; }

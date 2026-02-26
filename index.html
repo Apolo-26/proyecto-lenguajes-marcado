@@ -2,34 +2,143 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Restaurante Sabor UDB | Inicio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROSA- Restaurant</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body class="stop-scroll">
+
+    <div class="loader-wrap">
+        <div class="loader">
+            <div class="loader-item"></div>
+            <div class="loader-item"></div>
+            <div class="loader-item"></div>
+        </div>
+    </div>
+
+    <div class="dots">
+        <div class="dot one active" data-x="#about-us"></div>
+        <div class="dot two" data-x="#recipes"></div>
+        <div class="dot three" data-x="#menu"></div>
+    </div>
 
     <header>
-        <h1>Restaurante Sabor UDB</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="menu.html">Menú</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+            <div class="logo">
+                <img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/logo-rosa-white.png" alt="Logo Rosa">
+            </div>
+            <div class="toggle">
+                <span class="first"></span>
+                <span class="middle"></span>
+                <span class="last"></span>
+            </div>
+            <div class="navigation-bar">
+                <ul>
+                    <li class="active"><a href="index.html">Inicio<span class="underline"></span></a></li>
+                    <li><a href="#about-us">Nosotros<span class="underline"></span></a></li>
+                    <li><a href="#menu">Menú<span class="underline"></span></a></li>
+                    <li><a href="#contact">Contacto<span class="underline"></span></a></li>
+                </ul>
+            </div>
         </nav>
+        <div class="text">
+            <h2>Bienvenido</h2>
+            <h1>THE ROSA</h1>
+            <div class="arrow">
+                <span class="left"></span>
+                <i class="fas fa-asterisk"></i>
+                <span class="right"></span>
+            </div>
+            <span>LISTOS PARA SERVIRLE</span>
+            <div class="button">
+                <button>RESERVAR AHORA</button>
+            </div>
+        </div>
+        <div class="arrow-down"></div>
     </header>
 
     <main>
-        <section>
-            <h2>Bienvenidos a la mejor experiencia culinaria</h2>
-            <p>Desde 1990 sirviendo con pasión en El Salvador.</p>
-            <img src="img/fachada-restaurante.jpg" alt="Vista frontal del restaurante" width="600">
+        <section class="about-us" id="about-us">
+            <div class="text">
+                <h3>Nuestra Historia</h3>
+                <h2>Descubra</h2>
+                <i class="fas fa-asterisk"></i>
+                <p>Rosa nació de la pasión por la cocina tradicional fusionada con técnicas modernas. Cada plato cuenta una historia de sabor y dedicación.</p>
+                <a href="#" class="a-CTA">LEER MÁS</a>
+            </div>
+            <div class="image-container">
+                <img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988527/about-img-1.jpg" alt="Comida 1">
+                <img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988527/about-img-2.jpg" alt="Comida 2">
+            </div>
+        </section>
+
+        <section class="recipes" id="recipes">
+            <div class="text">
+                <h2>Ingredientes</h2>
+                <h3>SIEMPRE FRESCOS</h3>
+                <i class="fas fa-asterisk"></i>
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <div class="menu-image-container">
+                <div class="image"><img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988530/menu-img-1.jpg" alt="Menú 1"></div>
+                <div class="image"><img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988531/menu-img-2.jpg" alt="Menú 2"></div>
+                <div class="image"><img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988532/menu-img-3.jpg" alt="Menú 3"></div>
+                <div class="image"><img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988532/menu-img-4.jpg" alt="Menú 4"></div>
+            </div>
+            <div class="text">
+                <h3>Nuestro Menú</h3>
+                <h2>Sabor Real</h2>
+                <i class="fas fa-asterisk"></i>
+                <p>Desde entradas artesanales hasta postres de autor. Explore nuestra selección cuidadosamente curada.</p>
+                <a href="#" class="a-CTA">VER MENÚ COMPLETO</a>
+            </div>
+
+            <div class="box-model">
+                <i class="fas fa-times close"></i>
+                <div class="arrow">
+                    <div class="arrow-left"></div>
+                    <div class="arrow-right"></div>
+                </div>
+                <div class="box-image-container">
+                    <img src="" alt="Zoom" class="box-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="fixed-image" id="fixed-image">
+            <div class="text">
+                <h2>El Deleite</h2>
+                <h3>EXPERIENCIA ÚNICA</h3>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>Dirección: Calle La Reforma, San Salvador | Tel: 2222-0000</p>
+    <footer id="contact">
+        <div class="contact-container">
+            <div class="social-media">
+                <h3>SÍGUENOS</h3>
+                <div class="links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h3>BOLETÍN</h3>
+                <input type="email" placeholder="Tu correo">
+                <button><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="arrow-up"><i class="fas fa-chevron-up"></i></div>
+            <p>&copy; 2024 Restaurante Rosa - Proyecto UDB</p>
+        </div>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
